@@ -1,0 +1,15 @@
+{
+    "name": "Ubuntu 20.04 with Bash",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "/bin/bash",
+                "icon": "terminal-bash"
+            }
+        }
+    }
+}
+  

@@ -7,12 +7,12 @@ jobs:
   PR-Validations:
     runs-on: ubuntu-latest
 
-    container:
-      image: gcr.io/cloud-marketplace/google/bazel:latest
-
     steps:
       - name: Checkout PR
         uses: actions/checkout@v3
+      
+      - name: Setup Bazel
+        uses: bazelbuild/setup-bazelisk@v2
 
       - name: Bazel Test
         run: |

@@ -1,0 +1,19 @@
+name: PR-Validations
+
+on:
+  pull_request:
+
+jobs:
+  PR-Validations:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v3
+      
+      - name: Setup Bazel
+        uses: bazelbuild/setup-bazelisk@v2
+
+      - name: Bazel Test
+        run: |
+          bazel test //...

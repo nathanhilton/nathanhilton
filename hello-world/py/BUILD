@@ -1,7 +1,8 @@
 load("@rules_python//python:py_binary.bzl", "py_binary")
 
 py_binary(
-    name = "hello-world",
+    name = "hello_world",
     srcs = ["hello_world.py"],
-    visibility = ["//visibility:private"]
+    main = "hello_world.py",
+    visibility = ["//visibility:private"],
 )

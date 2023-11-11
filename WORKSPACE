@@ -44,7 +44,7 @@ load("@hermetic_python//:defs.bzl", "interpreter")
 pip_parse(
     name = "py_deps",
     python_interpreter_target = interpreter,
-    requirements_lock = "//third-party/py/private/generated:requirements.txt",
+    requirements_lock = "//third_party/py/private/generated:requirements.txt",
 )
 
 load("@py_deps//:requirements.bzl", "install_deps")

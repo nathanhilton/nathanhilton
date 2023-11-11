@@ -1,2 +1,0 @@
-# If you make a change to this file you need to run `bazel run //third-party/py:update`.
-aiohttp==3.8.4

@@ -1,21 +1,19 @@
-name: PR Validations
+name: PR-Validations
 
 on:
   pull_request:
 
 jobs:
-  build:
+  PR-Validations:
     runs-on: ubuntu-latest
+
+    container:
+      image: gcr.io/cloud-marketplace/google/bazel:latest
+
     steps:
       - name: Checkout PR
         uses: actions/checkout@v3
 
-      # - name: Set up Bazelisk
-      #   run: |
-      #     BAZEL_VERSION=$(curl -s https://api.github.com/repos/bazelbuild/bazelisk/releases/latest | jq -r .tag_name)
-      #     curl -Lo /usr/local/bin/bazel https://github.com/bazelbuild/bazelisk/releases/download/${BAZEL_VERSION}/bazelisk-linux-amd64
-      #     chmod +x /usr/local/bin/bazel
-
-      # - name: Bazel Test
-      #   run: |
-      #     bazel test //...
+      - name: Bazel Test
+        run: |
+          bazel test //...

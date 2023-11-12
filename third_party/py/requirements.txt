@@ -1,2 +1,3 @@
 # If you make a change to this file you need to run `bazel run //third_party/py:update`.
 aiohttp==3.8.4
+cchardet==2.1.7

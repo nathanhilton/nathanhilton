@@ -1,0 +1,164 @@
+\input{utilities}
+\usepackage{blindtext}  
+\usepackage{lipsum}
+
+\def\lrand{\lipsum[-]}
+\def\firstname{Nathan}
+\def\lastname{Hilton}
+\def\email{nathanhilton24@gmail.com}
+\def\linkedintext{linkedin.com/in/nathan-hilton}
+\def\linkedinurl{https://www.linkedin.com/in/nathan-hilton-02a137196/}
+\def\githubtext{github.com/nathanhilton}
+\def\githuburl{https://github.com/nathanhilton}
+\def\jasphone{+1 (904) 504-7748}
+
+% \def\jbegin{\begin{itemize}}
+% \def\jitem{\item }
+% \def\jend{\end{itemize}}
+\def\jbegin{\resumeItemListStart}
+\def\jitem{\resumeItem}
+\def\jend{\resumeItemListEnd}
+
+\def\profileSummary{
+\section{Career summary so far}
+\blindtext
+}
+
+
+\def\achievements{
+    \jbegin
+        \jitem{\lrand[1]}
+        \jitem {\lrand[2]}
+        \jitem {\lrand[1]}
+        \jitem {\lrand[2]}
+    \jend
+}
+
+% # Add education item here
+\EducationTemplate{College}
+{Jul 2018}{May 2022}{University of Florida }
+{Bachelor of Science in Computer Science}
+{Minor in Business Administration}
+
+\ExpTemplate{RBCCM}
+{Nov 1005}
+{Present}
+{\lrand[1]}
+{\lrand[1]}
+{\lrand[1]}
+{
+\jbegin
+    \jitem{\lrand[2]}
+    \jitem{\lrand[1]}
+    \jitem{\lrand[3]}
+    \jitem{\lrand[5]}
+\jend
+}
+
+
+\ExpTemplate{DivPF}
+{Nov 1005}
+{Present}
+{\lrand[1]}
+{\lrand[1]}
+{\lrand[1]}
+{
+\jbegin
+    \jitem{\lrand[2]}
+    \jitem{\lrand[1]}
+    \jitem{\lrand[7]}
+\jend
+}
+
+
+\ExpTemplate{GS}
+{Nov 1005}
+{Present}
+{\lrand[1]}
+{\lrand[1]}
+{\lrand[1]}
+{
+\jbegin
+    \jitem{\lrand[2]}
+    \jitem{\lrand[1]}
+    \jitem{\lrand[7]}
+\jend
+}
+
+\ExpTemplate{Rivigo}
+{Nov 1005}
+{Present}
+{\lrand[1]}
+{\lrand[1]}
+{\lrand[1]}
+{
+\jbegin
+    \jitem{\lrand[2]}
+    \jitem{\lrand[1]}
+    \jitem{\lrand[7]}
+\jend
+}
+
+\ExpTemplate{Amex}
+{Nov 1005}
+{Present}
+{\lrand[1]}
+{\lrand[1]}
+{\lrand[1]}
+{
+\jbegin
+    \jitem{\lrand[2]}
+    \jitem{\lrand[1]}
+    \jitem{\lrand[7]}
+\jend
+}
+
+
+\HckTemplate{HackCIMDGS}
+{2019}
+{\lrand[1]}
+{\lrand[3]}
+{\jbegin
+    \jitem{\lrand[27]}
+    \jitem{ \lrand[28]}
+\jend}
+
+
+\HckTemplate{HackWInfy}
+{2019}
+{\lrand[1]}
+{\lrand[3]}
+{\jbegin
+    \jitem{\lrand[27]}
+    \jitem{ \lrand[28]}
+    \jitem{ \lrand[30]}
+\jend}
+
+\HckTemplate{i3wm}
+{}
+{\lrand[1]}
+{\lrand[2]}
+{\jbegin
+    \item{\lrand[20]{}}
+    \item {\lrand[30]}
+    \item {\lrand[2]}
+\jend}
+
+\HckTemplate{TrdSigGen}
+{}
+{\lrand[1]}
+{\lrand[2]}
+{\jbegin
+    \item{\lrand[20]{}}
+    \item {\lrand[30]}
+    \item {\lrand[2]}
+\jend}
+% \DefineArrayVar{Education}{@}
+% {,}{School, Course, Stream, Start, End}
+% {,}{C,D}
+
+
+% \renewcommand{addEducation}{}
+
+
+% # Add projects here

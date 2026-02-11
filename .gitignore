@@ -1,5 +1,0 @@
-# bazel generated files
-bazel-*
-
-# resume build output
-resume/out/

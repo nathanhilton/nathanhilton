@@ -9,7 +9,7 @@
 \input{particulars}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
-\usepackage{titlesec}lorenipsum
+\usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
@@ -114,8 +114,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.35in, topsep=2pt, partopsep=0pt, itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,18 +133,6 @@
 
 \begin{document}
 \titlesection
-\profileSummary
-
-\describe{College}{Start}
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-      \resumeSubheading{\csname College@School\endcsname}
-      {\csname College@Start\endcsname \ -- \csname College@End\endcsname}
-      {\csname College@Course\endcsname, \csname College@Stream\endcsname}{}
-  \resumeSubHeadingListEnd
-
 
 \newcommand{\renderExp}[1]{
 \resumeSubheading
@@ -153,19 +141,27 @@
       \csname #1@Highlights\endcsname
 }
 
-\section{Experience}
+\section{Work Experience}
     \resumeSubHeadingListStart
-        \renderExp{RBCCM}
-        \renderExp{DivPF}
-        \renderExp{GS}  
+        \renderExp{Pinterest}
+        \renderExp{Amex}
+        \renderExp{SpaceML}
+        \renderExp{TA}
   \resumeSubHeadingListEnd
 % \vspace{-16pt}
 
-\section{Internships}
+\section{Projects}
 \resumeSubHeadingListStart
-    \renderExp{Rivigo}
-    \renderExp{Amex}
+    \renderExp{Project1}
 \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading{\csname College@School\endcsname}
+      {\csname College@Start\endcsname \ -- \csname College@End\endcsname}
+      {\csname College@Course\endcsname, \csname College@Stream\endcsname}{}
+  \resumeSubHeadingListEnd
 
 \newcommand{\renderHck}[1]{
       \resumeProjectHeading

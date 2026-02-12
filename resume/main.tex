@@ -141,9 +141,23 @@
       \csname #1@Highlights\endcsname
 }
 
+% One Pinterest section with two roles (SE II then SE I) under same company header
+\newcommand{\renderPinterest}{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Pinterest} & \textbf{\small Jul 2022 -- Present} \\
+    \hfill & \textit{\small San Francisco, USA} \\
+  \end{tabular*}\vspace{-12pt}
+  \textit{\small Software Engineer II \, (Mar 2024 -- Present) - Developer Fundamentals Team}\vspace{-4pt}
+  \csname PinterestSE2@Highlights\endcsname
+  \vspace{2pt}
+  \textit{\small Software Engineer I \, (Jul 2022 -- Feb 2024) - Code \& Language Runtime Team}\vspace{-2pt}
+  \csname PinterestSE1@Highlights\endcsname
+}
+
 \section{Work Experience}
     \resumeSubHeadingListStart
-        \renderExp{Pinterest}
+        \renderPinterest
         \renderExp{Amex}
         \renderExp{SpaceML}
         \renderExp{TA}
@@ -154,6 +168,15 @@
 \resumeSubHeadingListStart
     \renderExp{Project1}
 \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item\small{
+      \textbf{Languages}{: \skillsLanguages} \\[2pt]
+      \textbf{Tools \& Platforms}{: \skillsTools}
+    }
+  \resumeSubHeadingListEnd
+\vspace{-14pt}
 
 %-----------EDUCATION-----------
 \section{Education}

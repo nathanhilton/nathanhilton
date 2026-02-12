@@ -10,5 +10,5 @@ Based on https://github.com/sb2nov/resume.
 
 ```
 brew install --cask mactex-no-gui
-latexmk -pdf -jobname=resume-nathan-hilton main.tex
+./build.sh
 ```

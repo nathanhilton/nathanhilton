@@ -10,5 +10,6 @@ Based on https://github.com/sb2nov/resume.
 
 ```
 brew install --cask mactex-no-gui
-./build.sh
 ```
+
+Then use the LaTeX Workshop extension to build automatically!

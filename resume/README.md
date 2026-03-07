@@ -1,8 +1,8 @@
 # Resume
 
-This is the folder where I store the code for my resume!
+This is where I am storing my resume, as well as the code to create it!
 
-For the resume refer to the [resume](./resume-nathan-hilton.pdf) file.
+For my resume, refer to the [./build/resume-nathan-hilton.pdf](./build/resume-nathan-hilton.pdf) file.
 
 Based on https://github.com/sb2nov/resume.
 
